@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from .routes.routes import routesBlueprint
-from .db.db import db
+from .database.db import db
 
 
 def create_app(settings):
