@@ -86,7 +86,3 @@ def delete_book(book_id):
     except Exception as e:
         db.session.rollback()
         return jsonify({"error": str(e)}), 500
-
-@routesBlueprint.route('/')
-def index():
-    pass
